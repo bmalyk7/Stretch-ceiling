@@ -1,27 +1,25 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    
 }
 
 a{
     text-decoration: none;
 }
 
-.first_display{
+header{
     position: absolute;
     width: 100%;
-    height: 575px;
-    background:url('../img/bg-1.png')center center/cover no-repeat;
+    top: 0;
 }
 
-/* .bg_section{
-    width: 100%;
-    position: absolute;
-} */
+.container{
+    position: relative;
+}
 
-
-header{
+.menu{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -72,68 +70,467 @@ header{
 }
 
 
+
+.backgraund{
+    height: 730px;
+    background:url('../img/bg-1.png')center center/cover no-repeat fixed;
+}
+
+.subheader{
+    margin-top: -735px;
+}
+
+.subheader_content{
+    display: flex;
+}
+
+
+.left_side{
+    width: 38vw;
+}
 .main_title{
-    margin-top: 45px;
-    margin-left: 140px;
-    width: 851px;
-    height: 285px;
+    margin-top: 145px;
+    width: 600px;
     text-align: left;
     font-weight: 900;
-    font-size: 82px;
+    font-size: 60px;
     line-height: 93px;
 }
 
 
+
+
+.subheader_btn{
+    margin-top: 40px;
+    background: #F7D231;
+    width: 300px;
+    height: 75px;
+    border: none;
+}
+
+
 .bg_man{
-    position: absolute;
     background:url('../img/man.png')center center/cover no-repeat;
-    width: 486px;
-    height: 473px;
-    left: 63%;
-    top: 100px;
+    width: 490px;
+    height: 587px;
+    margin-top: 145px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.nav-item{
-    margin-right: 8%;
-}
-
-.phohe_block{
+.extra_info{
     display: flex;
-    flex-direction: column;
+    margin-top: 105px;
 }
 
-.nav_logo{
-    margin-right: 10%;
+.onmarket{
+    display: flex;
+    margin-right: 60px;
 }
 
-.phohe_block{
-    margin-right: 5%;
+.block{
+    width: 35px;
+    height: 35px;
+    background-color:#F7D231;
+    text-align:center;
+    font-weight: 500;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.little_info{
+    text-align:center;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 
- */
+.adv_title{
+    display: block;
+    margin: 160px auto 0 auto;
+    width: 570px;
+    text-align: center;
+    border-bottom: 5px solid #F7D231;
+}
+
+
+.adv_block{
+    margin-top: 75px;
+    padding-top: 21px;
+    text-align: center;
+    border: 2px solid #EEEEEE;
+}
+
+.icon_first{
+    background: url('../icons/perspective\ 1.png')center center/cover no-repeat;
+    width : 124px;
+    height: 123px;
+    margin: 0 auto;
+}
+
+
+.icon_second{
+    background: url('../icons/Group.png')center center/cover no-repeat;
+    width : 124px;
+    height: 123px;
+    margin: 0 auto;
+}
+
+.icon_third{
+    background: url('../icons/XMLID\ 1077.png')center center/cover no-repeat;
+    width : 124px;
+    height: 123px;
+    margin: 0 auto;
+}
+
+.adv_subtitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.kinds_title{
+    display: block;
+    margin: 160px auto 0 auto;
+    width: 470px;
+    text-align: center;
+    border-bottom: 5px solid #F7D231;
+}
+
+.kinds_block{
+    padding:15px;
+    margin-top: 100px;
+    overflow: hidden;
+    max-width: 315px;
+    height: 295px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.middle{
+    margin-left: 19px;
+}
+.right{
+    margin-left: 38px;
+    margin-right: 0px;
+}
+
+
+.line{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.name_kinds{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.subtitle_kinds{
+    font-size: 10px;
+}
+
+.contents_kinds{
+    margin-top: 20px;
+    max-width: 300px;
+    height: 170px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.line_divider{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.divider{
+    display: block;
+    width: 60px;
+    border-bottom: 1px solid black;
+}
+
+.line_price{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.price{
+    font-weight: bold;
+}
+
+.calculator_title{
+    display: block;
+    margin: 160px auto 0 auto;
+    width: 570px;
+    text-align: center;
+    border-bottom: 5px solid #F7D231;
+}
+
+.calc_row{
+    margin-top: 65px;
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.square_block{
+    width: 300px;
+    padding-right: 30px ;
+}
+
+.card_title{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.elements_block{
+    width: 300px;
+    padding-left: 30px; 
+    padding-right: 30px;
+    height: 200px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.materials_block{
+    width: 300px;
+    padding-left: 30px;
+}
+
+
+.calc_line{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.inputs{
+    width: 40px;
+    text-align: center;
+}
+
+.input_wrapper::before{
+    content:"-";
+    margin-right: 3px;
+}
+
+.input_wrapper::after{
+    content:"+";
+    margin-left: 3px;
+}
+
+
+.calc_radio{
+    display: flex;
+}
+
+.radio{
+    width: 50px;
+}
+
+#materials{
+    width: 200px;
+}
+
+.client_price{
+    width: 200px;
+    height: 30px;
+display: flex;
+margin: 100px auto 30px auto;
+}
+
+.call_btn{
+    display: block;
+    margin: 0 auto;
+    background: #F7D231;
+    width: 300px;
+    height: 75px;
+    border: none;
+}
+
+
+.slider_part{
+    margin-top: 160px;
+}
+
+.slider_title{
+    display: block;
+    margin: 160px auto 0 auto;
+    width: 370px;
+    text-align: center;
+    border-bottom: 5px solid #F7D231;
+}
+
+.big_img{
+    margin-top: 30px;
+    width: 100%;
+    height: 395px;
+}
+
+.carousel{
+    margin-top: 80px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    
+    margin-bottom: 100px;
+}
+
+.img_wrapper{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.slider{
+    margin-right: 30px;
+    
+}
+
+.slide{
+    min-width: 300px;
+    height: 200px;
+}
+
+
+
+
+
+
+.form_title{
+    margin: 0 auto;
+    
+    width: 300px;
+    text-align: center;
+    border-bottom: 5px solid #F7D231;
+}
+
+.name{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.surname{
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.question{
+    margin-top: 20px;
+    width: 100%;
+    height: 150px;
+}
+
+
+
+
+.social_line{
+    display: flex;
+    margin-top: 20px;
+}
+.social_line:first-child{
+    margin-top: 10px;
+}
+
+.social_content{
+    align-self: center;
+    color:black;
+    font-size: 14px;
+}
+.mail_icon{
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    background:url('../icons/gmail.png')center center/cover no-repeat;
+}
+
+.insta_icon{
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    background:url('../icons/instagram.png')center center/cover no-repeat;
+}
+
+.call_icon{
+    margin-right: 25px;
+    width: 40px;
+    height: 40px;
+    background:url('../icons/whatsapp.png')center center/cover no-repeat;
+}
+
+
+.send_btn{
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+    border:none;
+    background: #F7D231;
+}
+
+
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 250px;
+    background-color:#1A1A1A;
+}
+
+
+
+@media screen and (max-width:992px){
+    .link_item{
+        font-size: 14px;
+    }
+    .number{
+        font-size: 25px;
+    }
+    .schedule{
+        font-size: 10px;
+    }
+    .menu_btn{
+        width: 150px;
+    }
+
+    .backgraund{
+        height: 560px;
+    }
+
+    .subheader{
+        margin-top: -565px;
+    }
+    .left_side{
+        width: 45vw;
+    }
+    .main_title{
+        margin-top: 145px;
+        width: 600px;
+        text-align: left;
+        font-weight: 900;
+        font-size: 52px;
+        line-height: 93px;
+    }
+
+    .extra_info {
+        display: flex;
+        margin-top: 50px;
+    }
+    .onmarket {
+        display: flex;
+        margin-right: 20px;
+    }
+    .little_info {
+        font-size: 18px;
+    }
+
+    .bg_man {
+        width: 370px;
+        height: 420px;
+    }
+}
 
 
 
@@ -145,6 +542,56 @@ header{
 
 
 
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    .link_item{
+        font-size: 13px;
+    }
+    .number{
+        font-size: 23px;
+    }
+    .schedule{
+        font-size: 9px;
+    }
+    .menu_btn{
+        width: 150px;
+    }
+    .left_side{
+        width: 50vw;
+    }
+    .main_title{
+        margin-top: 145px;
+        width: 502px;
+        text-align: left;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 93px;
+    }
+
+    .extra_info {
+        display: flex;
+        margin-top: 50px;
+    }
+    .onmarket {
+        display: flex;
+        margin-right: 10px;
+    }
+    .little_info {
+        font-size: 17px;
+    }
+
+    .bg_man {
+        width: 340px;
+        height: 405px;
+    }
+    
+}
 
 
 
