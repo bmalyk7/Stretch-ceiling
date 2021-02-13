@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&family=Roboto:wght@100;500;900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -22,6 +26,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    z-index: 2000;
 }
 
 
@@ -74,11 +79,11 @@ header{
 
 .backgraund{
     height: 730px;
-    background:url('../img/bg_1.png')center center/cover no-repeat fixed;
+    background:url('../img/bg_1.png')center center/cover no-repeat;
 }
 
 .subheader{
-    margin-top: -735px;
+    margin-top: -630px;
 }
 
 .subheader_content{
@@ -114,7 +119,7 @@ header{
     background:url('../img/man.png')center center/cover no-repeat;
     width: 490px;
     height: 587px;
-    margin-top: 145px;
+    margin-top: 40px;
 }
 
 .extra_info{
@@ -143,6 +148,10 @@ header{
     font-size: 24px;
 }
 
+.sm_subheader_btn{
+    display: none;
+}
+
 
 .adv_title{
     display: block;
@@ -155,34 +164,34 @@ header{
 
 .adv_block{
     margin-top: 75px;
-    padding-top: 21px;
-    text-align: center;
+    padding:40px 60px;
     border: 2px solid #EEEEEE;
 }
 
 .icon_first{
     background: url('../icons/perspective\ 1.png')center center/cover no-repeat;
-    width : 124px;
-    height: 123px;
+    width : 100px;
+    height: 100px;
     margin: 0 auto;
 }
 
 
 .icon_second{
     background: url('../icons/Group.png')center center/cover no-repeat;
-    width : 124px;
-    height: 123px;
+    width : 100px;
+    height: 100px;
     margin: 0 auto;
 }
 
 .icon_third{
     background: url('../icons/XMLID\ 1077.png')center center/cover no-repeat;
-    width : 124px;
-    height: 123px;
+    width : 100px;
+    height: 100px;
     margin: 0 auto;
 }
 
 .adv_subtitle{
+    margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -495,13 +504,13 @@ footer{
     }
 
     .subheader{
-        margin-top: -565px;
+        margin-top: -470px;
     }
     .left_side{
         width: 45vw;
     }
     .main_title{
-        margin-top: 145px;
+        margin-top: 30px;
         width: 600px;
         text-align: left;
         font-weight: 900;
@@ -524,6 +533,35 @@ footer{
     .bg_man {
         width: 370px;
         height: 420px;
+        margin-top: 50px;
+    }
+
+    .adv_block{
+        padding:10px;
+    }
+    .adv_subtitle{
+        font-size: 17px;
+    }
+
+    .icon_first{
+        width : 80px;
+        height: 80px;
+    }
+    
+    
+    .icon_second{
+        width : 80px;
+        height: 80px;
+    }
+    
+    .icon_third{
+        width : 80px;
+        height: 80px;
+    }
+
+    .adv_descr{
+        margin-top: 10px;
+        font-size: 13px;
     }
 }
 
@@ -544,6 +582,9 @@ footer{
 
 
 @media screen and (max-width:768px){
+    .backgraund{
+        height: 450px;
+    }
 
     .header_logo{
         font-size: 30px;
@@ -553,7 +594,7 @@ footer{
     .nav_menu{
         display: block;
         position: absolute;
-        left: -200px;
+        left: -350px;
     }
     .number{
         font-size: 30px;
@@ -569,6 +610,18 @@ footer{
         margin-top: 8px;
         width: 40px;
         height: 32px;
+    }
+
+    .active.top{
+        transform: rotate(-45deg) translate(-8px, 10px);;
+        transition-duration: 0.4s;
+    }
+    .active.middle{
+        display: none;
+    }
+    .active.bottom{
+        transform: rotate(45deg)translate(3px, 1px);
+        transition-duration: 0.4s;
     }
     
     .top{
@@ -599,37 +652,91 @@ footer{
     }
    
     .menu_btn{
-        width: 150px;
+        display: none;
     }
     .left_side{
-        width: 50vw;
+        width: 42vw;
+    }
+
+    .subheader{
+        margin-top: -370px;
     }
     .main_title{
-        margin-top: 145px;
-        width: 502px;
+        margin-top: 20px;
+        width: 480px;
         text-align: left;
         font-weight: 900;
-        font-size: 50px;
-        line-height: 93px;
+        font-size: 45px;
+        line-height: 50px;
     }
 
     .extra_info {
-        display: flex;
+        display: block;
         margin-top: 50px;
     }
     .onmarket {
         display: flex;
-        margin-right: 10px;
+        margin-bottom: 30px;
+
     }
     .little_info {
         font-size: 17px;
     }
 
+    .subheader_btn{
+        display: none;
+    }
+
     .bg_man {
-        width: 340px;
-        height: 405px;
+        width: 250px;
+        height: 300px;
+        margin-top:70px;
+    }
+
+    .sm_subheader_btn{
+        display: block;
+        margin: -33px auto;
+        width: 350px;
+        height: 72px;
+        z-index: 100;
+        background-color: #F7D231;
     }
     
+    .adv_block{
+        padding: 10px 10px;
+    }
+
+    .icon_first{
+        
+        width : 80px;
+        height: 80px;
+        
+    }
+    
+    
+    .icon_second{
+        
+        width : 80px;
+        height: 80px;
+        
+    }
+    
+    .icon_third{
+       
+        width : 80px;
+        height: 80px;
+        
+    }
+
+
+    .wrap{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .kinds_block{
+        margin: 100px auto;
+    }
 }
 
 
@@ -639,16 +746,16 @@ footer{
 
 @media screen and (max-width:576px){
 
-
-
-
-
-    
     .link_item{
         font-size: 13px;
     }
+
+    .header_logo{
+        font-size: 30px;
+        line-height: 25px;
+    }
     .number{
-        font-size: 23px;
+        font-size: 20px;
     }
     .schedule{
         font-size: 9px;
@@ -656,40 +763,62 @@ footer{
     .menu_btn{
         width: 150px;
     }
+    .hamburger{
+        margin-top: 0;
+    }
+    .top{
+        width: 35px;
+        height: 5px;
+    }
+    .middle{
+        width: 35px;
+        height: 5px;
+    }
+    .bottom{
+        width: 35px;
+        height: 5px;
+    }
+
     .left_side{
         width: 50vw;
     }
     .main_title{
-        margin-top: 145px;
-        width: 502px;
-        text-align: left;
-        font-weight: 900;
-        font-size: 50px;
-        line-height: 93px;
+        width: 290px;
+        font-size: 29px;
+        line-height: 50px;
     }
 
     .extra_info {
-        display: flex;
-        margin-top: 50px;
+        margin-top: 25px;
     }
     .onmarket {
         display: flex;
         margin-right: 10px;
     }
     .little_info {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .bg_man {
-        width: 340px;
-        height: 405px;
+        width: 220px;
+        height: 260px
     }
     
+    .sm_subheader_btn{
+        margin: 0px auto;
+        width: 240px;
+        height: 62px;
+    }
+
 }
 
 
 
-
+@media screen and (max-width:480px){
+    .right_side{
+        display: none;
+    }
+}
 
 
 
