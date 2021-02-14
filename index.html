@@ -9,7 +9,7 @@
 </head>
 <body>
     
-  <div class="backgraund"></div>
+ <div class="backgraund"></div>
     
   <header>
       <div class="container ">
@@ -32,10 +32,10 @@
                     <button class="menu_btn">Консультация</button>
 
                     <div class="hamburger">
-                      <div class="hamburger_wrap">
-                        <span class="top"></span>
-                        <span class="middle"></span>
-                        <span class="bottom"></span>
+                      <div class="hamburger_wrap check">
+                        <span class="top check"></span>
+                        <span class="middle check"></span>
+                        <span class="bottom check"></span>
                       </div>
                     </div>
                </div>
@@ -87,12 +87,11 @@
 
 
 
-   <!-- <div class="advantages">
-     <div class="container container-sm">
-      <h2 class="adv_title">Преймущества натяжных потолков
-      </h2>
+   <div class="advantages">
+     <div class="container container-lg container-md container-sm ">
+      <!-- <h2 class="adv_title">Преймущества натяжных потолков</h2> -->
        <div class="row">
-        <div class="col-lg-4 col-md-4 wrap">
+        <div class="col-lg-4 col-md-4 col-sm-12 wrap">
           <div class="adv_block">
             <div class="icon_first">
              
@@ -136,7 +135,6 @@
        </div>
      </div>
    </div>
- -->
 
 
 
@@ -149,12 +147,12 @@
 
 
 
-       <!-- <div class="kinds">
+
+       <div class="kinds">
          <div class="container">
-          <h2 class="kinds_title">Варианты натяжных потолков
-          </h2>
+          <!-- <h2 class="kinds_title">Варианты натяжных потолков</h2> -->
            <div class="row">
-             <div class="col-lg-4 col-md-6 ">
+             <div class="col-lg-4 col-md-6">
                <div class="kinds_block left">
                  <h3 class="name_kinds">Матовые</h3>
                   <div class="subtitle_kinds">для кухни, ванной, коридора спальни или детской</div>
@@ -189,10 +187,10 @@
                   </div>
                </div>
              </div>
-              -->
+              
 
 
-              <!-- <div class="col-lg-4 col-md-6 ">
+              <div class="col-lg-4 col-md-6 ">
                <div class="kinds_block">
                  <h3 class="name_kinds ">Матовые</h3>
                   <div class="subtitle_kinds">для кухни, ванной, коридора спальни или детской</div>
@@ -375,17 +373,17 @@
 
            </div>
          </div>
-       </div> -->
+       </div>
        
-       <!-- <div class="calculator">
+       <div class="calculator">
          <div class="container">
-          <h2 class="calculator_title">Калькулятор стоимости потолка</h2>
+          <!-- <h2 class="calculator_title">Калькулятор стоимости потолка</h2> -->
           <div class="row">
-            <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1" >
+            <div class="col-lg-10 offset-lg-1 col-md-12" >
 
               
-              <div class="calc_row">
-                <form class="square_block">
+              <form class="calc_row">
+                <div class="square_block">
                   <div class="card_title">Помещение</div>
                   <div class="calc_line">
                    <div class="key">Длинна</div>
@@ -395,9 +393,9 @@
                    <div class="key">Ширина</div>
                    <div class="input_wrapper"><input type="text" class="inputs" value="1"></div>
                   </div>
-                </form>
+                </div>
     
-                <form class="elements_block">
+                <div class="elements_block">
                   <div class="card_title">Элементы, шт</div>
                   <div class="calc_line">
                    <div class="key">Углы</div>
@@ -412,21 +410,28 @@
                     <div class="input_wrapper"><input type="text" class="inputs" value="1"></div>
                     
                    </div>
-                </form>
+                </div>
     
-                <form class="materials_block">
-                  <div class="card_title">Элементы, шт</div>
-                  <div class="calc_line">
+                <div class="materials_block">
+                  <div class="card_title extra">Материалы и цвет</div>
+                  <div class="calc_line_last medium">
                     <p>
-
-                      <input type="radio" class="radio" value="glue"><label for="glue">ПВХ</label>
+                      <input type="radio" name="material" class="radio mat_input" value="glue"><label for="glue">ПВХ</label>
+                    </p>
+                    <p>
+                      <input type="radio" name="material" class="radio mat_input" value="material"><label for="material">Ткань</label>
                     </p>
                     
-                   <input type="radio" class="radio" value="">Ткань
+                   
                   </div>
-                  <div class="calc_line">
-                    <input type="radio" class="radio" value="">Белый
-                    <input type="radio" class="radio" value="">Цветной
+                  <div class="calc_line_last medium">
+                    <p>
+                      <input type="radio" name="color" class="radio mat_input" value="white"><label for="white">Белый</label>
+                    </p>
+                    <p>
+                      <input type="radio" name="color" class="radio mat_input" value="colors"><label for="colors">Цветной</label>
+                    </p>
+                    
                   </div>
                   <select name="material" id="materials">
                     <option value="">Глянцевый</option>
@@ -435,7 +440,7 @@
                     <option value="">Глянцевый</option>
                     <option value="">Глянцевый</option>
                   </select>
-                </form>
+                </div>
     
               
     
@@ -444,7 +449,7 @@
     
     
     
-              </div>
+              </form>
               <div class="client_price">
                 <div class="key">Стоимость:</div> 
                 <div class="client_value">13900 р</div>
@@ -453,7 +458,7 @@
             </div>
           </div>
          </div>
-       </div> -->
+       </div>
 
 
        <!-- <div class="slider_part">

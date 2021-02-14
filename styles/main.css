@@ -20,6 +20,7 @@ header{
 
 .container{
     position: relative;
+    box-sizing: border-box;
 }
 
 .menu{
@@ -29,6 +30,13 @@ header{
     z-index: 2000;
 }
 
+body{
+    width: 100%;
+}
+
+body.hidden{
+overflow: hidden;
+}
 
 .nav_menu{
     display: flex;
@@ -166,6 +174,11 @@ header{
     margin-top: 75px;
     padding:40px 60px;
     border: 2px solid #EEEEEE;
+}
+
+.wrap{
+    padding-left: 20px; 
+    text-align: center;
 }
 
 .icon_first{
@@ -314,6 +327,12 @@ header{
     text-align: center;
 }
 
+
+
+input.mat_input{
+    background-color:#F7D231;
+}
+
 .input_wrapper::before{
     content:"-";
     margin-right: 3px;
@@ -329,19 +348,26 @@ header{
     display: flex;
 }
 
+.calc_line_last{
+    display: flex;
+    margin-top: 10px;
+}
+
 .radio{
-    width: 50px;
+    width: 15px;
 }
 
 #materials{
-    width: 200px;
+    width: 266px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
 .client_price{
     width: 200px;
     height: 30px;
-display: flex;
-margin: 100px auto 30px auto;
+    display: flex;
+    margin: 100px auto 30px auto;
 }
 
 .call_btn{
@@ -377,7 +403,6 @@ margin: 100px auto 30px auto;
     width: 100%;
     height: 200px;
     overflow: hidden;
-    
     margin-bottom: 100px;
 }
 
@@ -390,7 +415,6 @@ margin: 100px auto 30px auto;
 
 .slider{
     margin-right: 30px;
-    
 }
 
 .slide{
@@ -405,7 +429,6 @@ margin: 100px auto 30px auto;
 
 .form_title{
     margin: 0 auto;
-    
     width: 300px;
     text-align: center;
     border-bottom: 5px solid #F7D231;
@@ -563,6 +586,37 @@ footer{
         margin-top: 10px;
         font-size: 13px;
     }
+    .calc_row{
+        flex-wrap: wrap;
+    }
+    .square_block{
+        width: 40%;
+    }
+    .elements_block{
+        width: 40%;
+        border:none;
+    }
+    .materials_block{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 0;
+    }
+    .extra{
+        width: 100%;
+        text-align: center;
+    }
+    .medium{
+        margin-right: 10vw;
+    }
+    input.mat_input{
+        width: 23px;
+    }
+    #materials{
+        margin-top: 10px;
+        width: 20vw;
+        height: 25px;
+    }
 }
 
 
@@ -595,6 +649,23 @@ footer{
         display: block;
         position: absolute;
         left: -350px;
+        transition-duration:0.4s;
+    }
+    .active.nav_menu{
+        display: block;
+        position: absolute;
+        background-color: rgba(105,105,105, 0.8);
+        left: -90px;
+        width: 40vw;
+        height: 500px;
+        z-index: 100;
+        text-align: center;
+        padding: 20px;
+        transition-duration:0.4s;
+    }
+    .link_item{
+        font-size: 15px;
+        color:white;
     }
     .number{
         font-size: 30px;
@@ -607,9 +678,13 @@ footer{
     }
 
     .hamburger{
+        position: relative;
         margin-top: 8px;
         width: 40px;
         height: 32px;
+    }
+    .hamburger_wrap{
+        position: absolute;
     }
 
     .active.top{
@@ -620,7 +695,7 @@ footer{
         display: none;
     }
     .active.bottom{
-        transform: rotate(45deg)translate(3px, 1px);
+        transform: rotate(45deg)translate(4px, 1px);
         transition-duration: 0.4s;
     }
     
@@ -630,6 +705,7 @@ footer{
         width: 40px;
         height: 6px;
         background:black;
+        transition-duration: 0.4s;
     }
     
     .middle{
@@ -638,6 +714,7 @@ footer{
         height: 6px;
         background:black;
         margin-bottom: 4px;
+        transition-duration: 0.4s;
     }
     
     .bottom{
@@ -645,6 +722,7 @@ footer{
         width: 40px;
         height: 6px;
         background:black;
+        transition-duration: 0.4s;
     }
 
     .link_item{
@@ -698,7 +776,6 @@ footer{
         margin: -33px auto;
         width: 350px;
         height: 72px;
-        z-index: 100;
         background-color: #F7D231;
     }
     
@@ -730,12 +807,26 @@ footer{
 
 
     .wrap{
-        padding-right: 100px;
-        padding-left: 100px;
+       padding-left: 60px;
+       padding-right: 60px;
+        text-align: center;
     }
 
     .kinds_block{
         margin: 100px auto;
+    }
+    .medium{
+        margin-right: 5vw;
+    }
+    .card_title{
+        font-size: 20px;
+    }
+    input.mat_input{
+        width: 20px;
+    }
+    .call_btn{
+        width: 230px;
+        height: 60px;
     }
 }
 
@@ -745,11 +836,13 @@ footer{
 
 
 @media screen and (max-width:576px){
-
+    .active.nav_menu{
+        left: 0;
+        width: 40vw;
+    }
     .link_item{
         font-size: 13px;
     }
-
     .header_logo{
         font-size: 30px;
         line-height: 25px;
@@ -787,7 +880,6 @@ footer{
         font-size: 29px;
         line-height: 50px;
     }
-
     .extra_info {
         margin-top: 25px;
     }
@@ -803,12 +895,35 @@ footer{
         width: 220px;
         height: 260px
     }
-    
     .sm_subheader_btn{
         margin: 0px auto;
         width: 240px;
         height: 62px;
     }
+
+    .calc_row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .square_block{
+        padding: 0;
+        width: 202px;
+        margin-bottom: 20px;
+    }
+    .elements_block{
+        padding: 0;
+        width: 202px;
+    }
+    .materials_block{
+        flex-direction: column;
+        width: 202px;
+        align-items: flex-start;
+    }
+    #materials{
+        width: 200px;
+    }
+    
+
 
 }
 
